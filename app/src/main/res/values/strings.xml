@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">veriparkApp</string>
+
+    <string name="check_internet_con">İnternet Bağlantınızı Kontrol Edin!</string>
+    <string name="btn_imkb">IMKB Hisse Senetleri ve Endeksler</string>
+
+    <string name="btn_imkb_hisse">Hisse ve Endeksler</string>
+    <string name="btn_imkb_yukselen">IMKB Yükselenler</string>
+    <string name="btn_imkb_dusen">IMKB Düşenler</string>
+    <string name="btn_imkb_hacim_30">IMKB Hacme Göre - 30</string>
+    <string name="btn_imkb_hacim_50">IMKB Hacme Göre - 50</string>
+    <string name="btn_imkb_hacim_100">IMKB Hacme Göre - 100</string>
+
+    <string name="request_problem">Request Problem</string>
+</resources>

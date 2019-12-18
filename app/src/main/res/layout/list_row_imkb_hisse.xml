@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.percent.PercentRelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        app:layout_widthPercent="5%"
+        app:layout_heightPercent="5%"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:paddingBottom="5dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/sembol"
+        android:text="sembol"
+        app:layout_widthPercent="10%"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_toRightOf="@id/relative"
+        android:textColor="#000"
+        android:textSize="10dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/fiyat"
+        android:text="fiyat"
+        app:layout_widthPercent="15%"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sembol"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#000"
+        android:textSize="10dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/fark"
+        android:text="fark"
+        app:layout_widthPercent="10%"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fiyat"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#000"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/islem_hacmi"
+        android:text="islem_hacmi"
+        app:layout_widthPercent="20%"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fark"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#000"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/alis"
+        android:text="alis"
+        app:layout_widthPercent="15%"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/islem_hacmi"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#000"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/satis"
+        android:text="satis"
+        app:layout_widthPercent="15%"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/alis"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#000"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/saat"
+        android:text="saat"
+        app:layout_widthPercent="10%"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/satis"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="#000"
+        android:textSize="10dp" />
+
+</android.support.percent.PercentRelativeLayout>

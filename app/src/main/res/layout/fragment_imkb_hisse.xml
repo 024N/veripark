@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/titles"
+        android:background="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/image"
+            app:layout_widthPercent="5%"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/sembol_title"
+            android:text="Sembol"
+            app:layout_widthPercent="10%"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/fiyat_title"
+            android:text="Fiyat"
+            app:layout_widthPercent="15%"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sembol_title"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/fark_title"
+            android:text="Fark"
+            app:layout_widthPercent="10%"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fiyat_title"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ffffff"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/islem_hacmi_title"
+            android:text="İşlem Hacmi"
+            app:layout_widthPercent="20%"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fark_title"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ffffff"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/alis_title"
+            android:text="Alış"
+            app:layout_widthPercent="15%"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/islem_hacmi_title"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ffffff"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/satis_title"
+            android:text="Satış"
+            app:layout_widthPercent="15%"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/alis_title"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ffffff"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/saat_title"
+            android:text="Saat"
+            app:layout_widthPercent="10%"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/satis_title"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ffffff"
+            android:textSize="10dp" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <ListView
+        android:id="@+id/list_imkb_hisse"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titles"
+        android:divider="@color/red"
+        android:dividerHeight="2dp" />
+
+</RelativeLayout>
